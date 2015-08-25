@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchBG" translatesAutoresizingMaskIntoConstraints="NO" id="JOF-bl-aTL">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©Copyright 5iDJ Team 版权所有." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
+                    <rect key="frame" x="0.0" y="544" width="320" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="30K-PJ-CwT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchLogo" translatesAutoresizingMaskIntoConstraints="NO" id="uS5-YI-nPt">
+                    <rect key="frame" x="92" y="116" width="137" height="108"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="VUk-2f-Y55"/>
+                        <constraint firstAttribute="width" constant="137" id="rQ1-wO-8g1"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8ie-xW-0ye" secondAttribute="trailing" id="FHB-OV-loT"/>
+                <constraint firstAttribute="trailing" secondItem="JOF-bl-aTL" secondAttribute="trailing" id="L0l-V6-80K"/>
+                <constraint firstAttribute="bottom" secondItem="JOF-bl-aTL" secondAttribute="bottom" id="bDS-rZ-wcL"/>
+                <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gzd-YE-nZc"/>
+                <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="10" id="mE3-Ub-sES"/>
+                <constraint firstItem="uS5-YI-nPt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.6" id="oLg-wN-kqo"/>
+                <constraint firstAttribute="centerX" secondItem="uS5-YI-nPt" secondAttribute="centerX" id="q6d-sN-Vy4"/>
+                <constraint firstItem="JOF-bl-aTL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sQk-pz-Web"/>
+                <constraint firstItem="JOF-bl-aTL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="stc-cs-45N"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="404" y="445"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LaunchBG" width="1" height="1"/>
+        <image name="LaunchLogo" width="137" height="108"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

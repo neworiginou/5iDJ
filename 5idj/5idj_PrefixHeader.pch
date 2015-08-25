@@ -1,0 +1,53 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_7_0
+#warning "This project uses features only available in iOS SDK 7.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+#import  "MyBasic.h"
+#import  "MBProgressHUD.h"
+#import  "Reachability.h"
+#import  "UIImageView+LBBlurredImage.h"
+#import  "UIImage+ImageEffects.h"
+
+#include "API.h"
+#import  "NSError+GP_HTTPRequest.h"
+#import  "GP_UserManager.h"
+#import  "GP_SettingItemManager.h"
+
+#import  "GP_AppDelegate.h"
+#import  "GP_ThemeManager.h"
+
+#define defaultPlaceholderImage     ImageWithName(@"placeholder_small")
+
+#define defaultLineColor            ColorWithNumberRGB(0x8d8d8d)
+#define defaultBackIndicateColor    ColorWithRGBA(35, 35, 35, 200)
+#define defaultWhiteBarColor        [UIColor colorWithWhite:1.f alpha:0.7f]
+#define defaultDarkBarColor         BlackColorWithAlpha(0.7f)
+#define defaultCellBackgroundColor  [UIColor colorWithWhite:1.f alpha:0.3f]
+#define defaultViewBackgrounpColor  ColorWithNumberRGB(0xf4f2e5)
+#define defaultTitleTextColor       ColorWithNumberRGB(0x4d4d4d)
+#define defaultBodyTextColor        ColorWithNumberRGB(0x6d6d6d)
+
+
+
+#define defaultImageLoadSuccessBlock                                    \
+                                                                        \
+^(UIImageView * imageView,UIImage * image){                             \
+    CATransition * animation = [CATransition animation];                \
+    [animation setDuration:1.f];                                        \
+    [imageView.layer addAnimation:animation forKey:@"FadeAnimation"];   \
+}
+
+#endif

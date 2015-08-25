@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AutoStartPlayKey</key>
+	<true/>
+	<key>SavePlayRecoderKey</key>
+	<true/>
+	<key>AutoLockScreenWhenFullScreenKey</key>
+	<true/>
+	<key>AutoResumeWhenFullScreenKey</key>
+	<true/>
+	<key>ShowAlertWhenPlayViaWWANKey</key>
+	<true/>
+	<key>ShowNetworkStatusChangeNoficationKey</key>
+	<true/>
+	<key>ResumeWhenHeadphonesPluggedInKey</key>
+	<false/>
+</dict>
+</plist>

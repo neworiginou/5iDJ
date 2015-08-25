@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>rows</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+				<key>title</key>
+				<string>检查更新</string>
+				<key>image</key>
+				<string>about_update</string>
+				<key>selectEvent</key>
+				<string>SE_CHECK_UPDATE</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<integer>1</integer>
+				<key>title</key>
+				<string>隐私政策</string>
+				<key>image</key>
+				<string>about_privacy</string>
+				<key>targetKey</key>
+				<string>GP_PrivacyPolicyViewController</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
